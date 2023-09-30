@@ -5,11 +5,11 @@ class RepositorioAviao{
     public function cadastrar(aviao $aviao, PDO $pdo){
        
         $codigoSql = "INSERT INTO AVIAO(modelo,cmpaerea,cdp,velomax,autonomia) VALUES (:md,:cm,:cdp,:ve:,:au)";
-        $modelo = $aviao->exibirmodelo();
-        $cmpaerea = $aviao->exibircmaerea();
-        $cdp = $aviao->exibircdp();
-        $velomax = $aviao->exibirvelomax();
-        $autonomia = $aviao->exibirautonomia();
+        $modelo = $aviao->exibirModelo();
+        $cmpaerea = $aviao->exibirCmpaerea();
+        $cdp = $aviao->exibirCdp();
+        $velomax = $aviao->exibirVelomax();
+        $autonomia = $aviao->exibirAutonomia();
 
         
         $inserir = $pdo->prepare($codigoSql);

@@ -16,4 +16,3 @@ $criarTabela = "CREATE TABLE IF NOT EXISTS AVIAO(
 
 
 $banco->query($criarTabela);
-
